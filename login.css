@@ -1,0 +1,48 @@
+body {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  justify-content: center;
+  --border-color: dodgerblue;
+}
+
+#placeholderDiv {
+  font-size: 14px;
+}
+
+label {
+  color: grey;
+  display: block;
+  padding-bottom: 4px;
+}
+
+label:focus-within {
+  color: var(--border-color);
+}
+
+input {
+  border-color: lightgrey;
+  border-width: 0 0 2px;
+  font-size: 18px;
+  outline: 0;
+}
+
+input:focus {
+  border-color: var(--border-color);
+}
+
+input[type="button"],
+input[type="submit"] {
+  background-color: #f0f0f0;
+  border-bottom-style: outset;
+  color: dimgrey;
+  padding: 2px 6px;
+}
+
+#invalidDiv {
+  line-height: 1.2;
+  margin-top: 2px;
+  text-align: right;
+  word-break: break-all;
+}
